@@ -1,0 +1,532 @@
+/****************  General Style  ******************/
+/* General page formating*/
+body, html {
+	font-family: 'Lato', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: #4a525d;
+	width: 100% !important;
+	height: 100% !important;
+	font-size: 16px;
+}
+
+/* adds a preload spinner until your site fully loads, so it does not look weird when loading*/
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #ddd;
+	z-index: 99999;
+	height: 100%;
+}
+
+#status {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 64px;
+	height: 64px;
+	margin: -32px 0 0 -32px;
+	padding: 0;
+}
+
+
+/* How you want your links to look */
+a {
+	color: #0D263B;;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+	color: #226297;
+}
+
+
+/* How your buttons will look */
+.btn {
+	border-radius: 5px;
+	font-weight: 600;
+}
+
+.btn-default {
+	color: #f6f6f6;
+	background: #1cc878;
+	border: 0;
+	padding: 12px 24px;
+	margin: 0 8px;
+	font-size: 18px;
+	transition: all 0.5s;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
+	color: #f6f6f6;
+	background-color: #1cc878;
+}
+
+/* How your list items will look */
+ul, ol {
+	list-style: none;
+	padding: 0;
+	webkit-padding: 0;
+	moz-padding: 0;
+}
+
+/* Add a separating line */
+hr {
+	height: 2px;
+	width: 80px;
+	text-align: center;
+	position: relative;
+	background: #aaa;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border: 0;
+}
+
+/* Some general section formating */
+.section-title.center {
+	padding: 30px 0;
+}
+
+.section-title h2, .section-title.center h2 {
+	font-size: 27px;
+	line-height: 40px;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+}
+
+
+/********************* Navigation *************************/
+
+
+.navbar-custom {
+	background:#ffffff;
+	margin-bottom: 0px;
+	border-bottom: 2px solid #BBBBBB;
+}
+
+.navbar-custom .navbar-toggle {
+	color: #CCC;
+	border-radius: 5px;
+	padding: 0 4px;
+}
+.navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
+	background-color: #DDDDDD;
+	color: #FFFFFF;
+}
+
+.navbar-custom .navbar-brand {
+	font-size: 24px;
+	font-weight: 500;
+	padding: 20px 15px;
+	height:60px;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+	color: #0D263B;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus, .navbar-custom .navbar-brand .navbar-toggle:active {
+	outline: 0;
+	color: #FFFFFF;
+}
+
+.navbar-custom .nav li a {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	color: #0D263B;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.navbar-custom .nav li a:hover {
+	outline: 0;
+	color: #226297;
+	background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
+	outline: 0;
+	background-color: transparent;
+	color: #226297;
+}
+
+.navbar-custom .nav li.active {
+	outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+	background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+	color: #226297;
+}
+
+@media only screen and (max-width:768px){
+	.navbar-custom .navbar-brand {
+		font-size: 20px;
+	}
+
+	nav .navbar-toggle {
+		margin: 8px 25px;
+	}
+
+	nav .navbar-collapse {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	.navbar-custom .navbar-toggle {
+		padding: 10px 15px;;
+	}
+}
+
+/*********************** Home Section *************************/
+#intro-1 {
+	display: table;
+	width: 100%;
+	max-height: 560px;
+	height: auto;
+	padding: 0 ;
+	color: #FFFFFF;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/header_1.jpeg) no-repeat center left 45%;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+#intro-2 {
+	display: table;
+	width: 100%;
+	max-height: 560px;
+	height: auto;
+	padding: 0;
+	color: #FFFFFF;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/header_2.jpeg) no-repeat center left 45%;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+#intro {
+	background-color:#EEE;
+}
+
+#intro .intro-body {
+	display: table-cell;
+	vertical-align: middle;
+	padding:250px 150px 140px;
+}
+
+#intro .intro-body H1 {
+	border-color: rgb(64, 77, 95);
+	line-height: 60px;
+	font-weight: bold;
+	font-size: 60px;
+	opacity: 1;
+	text-shadow: 1px 1;
+	letter-spacing: 1px;
+}
+
+#intro .intro-body H3 {
+	font-size: 32px;
+	font-weight: 500;
+}
+
+#intro a{
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#intro .intro-body p {
+	font-size: 20px;
+}
+
+#intro .intro-body .brand-heading {
+	color: #2ba7a1;
+	text-shadow: 0 4px #226297;
+}
+
+#intro .intro-body .intro-text {
+	font-size: 18px;
+}
+
+@media(min-width:768px) {
+	#intro {
+		height: 100%;
+		padding: 0;
+	}
+	#intro .intro-body .intro-text {
+		font-size: 18px;
+		letter-spacing: 1px;
+		margin-bottom: 100px;
+		color: rgba(255,255,255,0.9);
+	}
+}
+
+/* making it look nice in mobile */
+@media(max-width:768px) {
+	#intro {
+		padding: 0;
+	}
+	#intro .intro-body {
+		display: table-cell;
+		vertical-align: middle;
+		padding-top: 150px;
+		padding-bottom: 150px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	#intro .intro-body H1 {
+		font-size: 2.5em;
+	}
+}
+
+/******************* About Section *******************/
+#about {
+	padding: 40px 0 100px;
+	background-color:#EEE;
+}
+
+#about h2 {
+	color: #222222;
+}
+
+
+/*************** Capabilities Section ****************/
+#capabilities {
+	padding: 80px 0;
+	opacity: 1;
+	color: #666;
+}
+
+#capabilities h2 {
+	color: #222222;
+}
+
+#capabilities img {
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/***************** Testimonials Section *******************/
+
+/* adding some parallax */
+#testimonials {
+	background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/parallax.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: #FFFFFF;
+	padding: 100px 0 60px;
+}
+
+@media only screen and (max-width:768px){
+	#testimonials {
+		background-attachment: initial;
+		background-size: 1800px;
+	}
+}
+
+#testimonials h2 {
+	color: #FFFFFF;
+}
+
+#testimonials hr {
+	margin-bottom: 0px;
+}
+
+#testimonials .section-title {
+	padding: 15px 0px;
+}
+
+#testimonials blockquote {
+	position: relative;
+	margin-top: 20px;
+	border: 0;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#testimonials i {
+	font-size: 24px;
+	color: #FFFFFF;
+	margin-bottom: 14px;
+}
+
+#testimonials .clients-name {
+	display: inline-block;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	padding: 20px 0;
+	margin-top: 10px;
+}
+
+
+/******************* Services Section ********************/
+#services {
+	padding: 80px 0;
+	opacity: 1;
+	color: #666;
+}
+
+#services h2 {
+	color: #222222;
+}
+
+#services img {
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:100%;
+	max-height:450px;
+}
+
+
+/**************** Action Section *********************/
+#action {
+	padding: 50px 0;
+	background-color: #1cc878;
+	color: #FFFFFF;
+}
+#action H3 {
+	margin: 0 0 10px;
+	font-size: 21px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+#action .btn-default {
+	background: none;
+	margin-top: 8px;
+	border: 1px solid #fff;
+	padding: 0;
+	display: block;
+	text-align: center;
+	line-height: 45px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/***************** Footer Section *********************/
+footer {
+	padding: 80px 0 20px;
+	background: #2d3949;
+}
+
+footer p {
+	margin-bottom: 20px;
+}
+
+footer h2 {
+		font-size: 21px;
+		text-transform: uppercase;
+		line-height: 64px;
+		color: #FFFFFF;
+		font-weight: bold;
+		margin: 0;
+}
+
+footer h3 {
+		color: #FFFFFF;
+}
+
+footer hr {
+	margin: 0px;
+	width: 200px;
+}
+
+footer li, footer a, footer p{
+	color: #FFFFFF;
+	font-family: 'Raleway', sans-serif;
+}
+
+footer ul {
+	margin-bottom:10px;
+}
+
+footer .fa-inverse {
+	color: #4a525d;
+}
+
+#footer {
+	background: #2d3949;
+	color: #777;
+	padding-bottom: 10px;
+	text-align: center;
+}
+#footer a {
+	color: #999999;
+}
+#footer a:hover {
+	color: #2ba7a1;
+}
+#footer p {
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+/**************** Social Medias ******************/
+.company-social {
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 10px;
+}
+
+.company-social {
+	text-align: left;
+	list-style: none;
+}
+
+.company-social li{
+	margin:0;
+	padding:0;
+	display: inline-block;
+}
+
+.company-social a{
+	margin:0 2px 0 0;
+}
+
+.company-social a:hover {
+	color: #fff;
+}
+
+.company-social a i {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	-webkit-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+	text-align: center;
+	border-radius: 50%;
+	padding:0;
+}
+
+.company-social .social-facebook a i{background: #3873ae;}
+.company-social .social-twitter a i{background: #62c6f8;}
+.company-social .social-dribble a i{background: #d74980;}
+.company-social .social-deviantart a i{background: #8da356;}
+.company-social .social-google a i {background: #ea4335;}
+.company-social .social-vimeo a i {background: #51a6d3;}
+.company-social .social-facebook a:hover i {background: #4893ce;}
+.company-social .social-twitter a:hover i {background: #82e6ff;}
+.company-social .social-dribble a:hover i {background: #f769a0;}
+.company-social .social-deviantart a:hover i {background: #adc376;}
+.company-social .social-google a:hover i {background: #961105;}
+.company-social .social-vimeo a:hover i {background: #71c6f3;}
+
+
