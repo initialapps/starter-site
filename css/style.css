@@ -65,14 +65,6 @@ a:hover, a:focus {
 	background-color: #1cc878;
 }
 
-/* How your list items will look */
-ul, ol {
-	list-style: none;
-	padding: 0;
-	webkit-padding: 0;
-	moz-padding: 0;
-}
-
 /* Add a separating line */
 hr {
 	height: 2px;
@@ -83,6 +75,19 @@ hr {
 	margin: 0 auto;
 	margin-bottom: 30px;
 	border: 0;
+}
+
+/* Add some font styling */
+h3 {
+	font-family:'Courgette', cursive;
+}
+
+/* How your list items will look */
+ul, ol {
+	list-style: none;
+	padding: 0;
+	webkit-padding: 0;
+	moz-padding: 0;
 }
 
 /* Some general section formating */
@@ -119,6 +124,7 @@ hr {
 }
 
 .navbar-custom .navbar-brand {
+	font-family:'Courgette', cursive;
 	font-size: 24px;
 	font-weight: 500;
 	padding: 20px 15px;
@@ -135,6 +141,7 @@ hr {
 }
 
 .navbar-custom .nav li a {
+	font-family:'Raleway', sans-serif;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
@@ -399,6 +406,16 @@ hr {
 	background-color: #1cc878;
 	color: #FFFFFF;
 }
+
+#action H2 {
+	color:#FFFFFF;
+	font-size: 27px;
+	line-height: 40px;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+};
+
 #action H3 {
 	margin: 0 0 10px;
 	font-size: 21px;
